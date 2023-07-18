@@ -7,10 +7,11 @@ import { useState } from 'react';
 
 export default function Main() {
 
-    let [favourites, setFavourites] = useState(0);
-    function handleFavourites(){
-        setFavourites(favourites + 1);
+    let [favourites, setFavourites] = useState([0,0]);
+    function handleFavourites(imageIndex){
+        console.log(imageIndex);
         console.log(favourites);
+        setFavourites(favourites.map((favourite) => favourite + 1));
         console.log("favourites function running!!!!!!!!!!");
     }
   return (
@@ -20,14 +21,16 @@ export default function Main() {
         imageUrl={Beetle} 
         description="These insects use their horns to fight rivals and display their prowess to mates" 
         handleFavourites={handleFavourites} 
-        favourites={favourites}/>
+        favourites={favourites}
+        beastNumber={0}/>
 
         <Beast 
         title="The Elk" 
         imageUrl={Elf} 
         description="The majestic stag's antlers are a kind of horn that can grow up to 9kg in weight each"
          handleFavourites={handleFavourites} 
-         favourites={favourites}/> 
+         favourites={favourites}
+         beastNumber={1}/> 
     </main>
   )
 }
