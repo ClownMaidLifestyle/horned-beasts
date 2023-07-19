@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.hornImage{
+  width:500px;
+  margin:auto;
+  border:#282c34 2px solid;
+}
