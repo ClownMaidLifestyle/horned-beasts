@@ -17,7 +17,7 @@ export default function Main(){
         title="The Elk" 
         imageUrl={Elk} 
         description="The majestic stag's antlers are a kind of horn that can grow up to 9kg in weight each"
-         beastId={Elk}/> 
+        beastId={Elk}/> 
     </main>
   )
 }

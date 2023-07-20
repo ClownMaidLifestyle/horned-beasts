@@ -13,10 +13,12 @@ export default function Beast({title,imageUrl,description, beastId}) {
     console.log(showModal);
   }
 
+
   function closeModal() {
     setShowModal(false);
     console.log(showModal);
   }
+
 
   function HandleFavourites(imageIndex){
     console.log(imageIndex);
@@ -28,7 +30,7 @@ export default function Beast({title,imageUrl,description, beastId}) {
     <div>
         <h2>{title}</h2>
         <div>
-            <img className="hornImage" onClick={() => {HandleFavourites(); openModal() }} src={imageUrl} alt="a horned beast!" />
+            <img className="hornImage" onClick={() => {HandleFavourites(); openModal()}} src={imageUrl} alt="a horned beast!" />
             {console.log(imageUrl)}
         </div>
         <span>{description}</span>
